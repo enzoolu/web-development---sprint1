@@ -9,7 +9,7 @@ function dados() {
     let nome = document.getElementById('name').value;
     let email = document.getElementById('email').value
 
-    if (nome.length < 2 || nome == '') {
+    if (nome.length < 3 || nome == '') {
         Swal.fire(
             {
                 title: 'Erro:',
