@@ -5,14 +5,29 @@ document.getElementById('confirmar').addEventListener('click', e => {
 });
 
 function dados() {
+    console.log('lsadkfbhv');
     let nome = document.getElementById('name').value;
     let email = document.getElementById('email').value
 
     if (nome.length < 2 || nome == '') {
-        alert('Preencha o nome corretamente')
+        Swal.fire(
+            {
+                title: 'Erro:',
+                text: 'Preencha o nome corretamente',
+                icon: 'error'
+            })
     } else if (email == '' || email.indexOf('@')==-1 || email.indexOf('.')==-1 ) {
-        alert('Peencha o email corretamente')
+        Swal.fire(
+            {
+                title: 'Erro:',
+                text: 'Preencha o email corretamente',
+                icon: 'error'
+            })
     } else {
-        alert('Dados Salvos')
+        Swal.fire(
+            {
+                title: 'Dados Salvos',
+                icon: 'success'
+            })
     }
 }
