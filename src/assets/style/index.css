@@ -70,13 +70,13 @@ form .dados input {
     border-bottom: 3px solid #61E786;
     color: #61E786;
     font-size: 20px;
-    padding-left: 10px;
 }
 
 form .dados input::-webkit-input-placeholder {
     color: #61E786;
     font-size: 20px;
     margin-left: 100px;
+    padding-left: 10px;
 }
 
 form .dados button {
